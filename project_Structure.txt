@@ -1,0 +1,30 @@
+FlavorFi/
+├── lib/
+│   ├── main.dart                 # Entry point of the app
+│   ├── screens/                  # Folder for all screens
+│   │   ├── onboarding_screen.dart
+│   │   ├── sign_in_screen.dart
+│   │   ├── home_screen.dart
+│   │   ├── recipe_suggestions_screen.dart
+│   │   ├── recipe_detail_screen.dart
+│   │   ├── saved_recipes_screen.dart
+│   │   ├── shopping_list_screen.dart
+│   │   └── profile_screen.dart
+│   ├── widgets/                  # Reusable custom widgets
+│   ├── models/                   # Data models for API responses
+│   │   ├── recipe.dart
+│   │   └── nutrition.dart
+│   ├── services/                 # Services to handle API calls
+│   │   ├── spoonacular_service.dart
+│   │   ├── edamam_service.dart
+│   │   └── firebase_service.dart
+│   ├── utils/                    # Utility functions, constants, etc.
+│   │   ├── constants.dart        # Constant variables (e.g., API keys, URLs)
+│   │   ├── theme.dart            # Custom theme and styling
+│   │   └── navigation.dart       # Centralized navigation helper
+│   └── providers/                # State management providers
+│       ├── recipe_provider.dart
+│       ├── user_provider.dart
+│       └── shopping_list_provider.dart
+├── pubspec.yaml                  # Dependencies file
+└── README.md                     # Project documentation
