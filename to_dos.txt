@@ -5,3 +5,110 @@ https://drive.google.com/drive/folders/15szEZY7oICu1aRaJ3Ur6zudIDt2f0KvZ
 #Suggested Resources
 Intro to flutter
 https://www.youtube.com/watch?v=1ukSR1GRtMU&list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ
+
+
+I'll help you break down the FlavorFi project using the Spoonacular API. Based on the project description and team task distribution, here's a comprehensive implementation plan:
+Project Setup and API Integration
+1. API Key and Configuration
+
+Sign up for Spoonacular API and obtain an API key
+Create a .env file to store the API key securely
+Set up API service class for network calls
+
+2. API Endpoints to Utilize
+From the Spoonacular documentation, you'll primarily use these endpoints:
+
+/recipes/complexSearch - Main recipe search
+/recipes/{id}/information - Get detailed recipe information
+/food/ingredients/autocomplete - Ingredient search and suggestions
+
+3. Key Screens and Functionality
+A. Onboarding Screen
+
+Create an introductory walkthrough
+Explain app features
+Allow user to set initial dietary preferences
+
+B. Home Screen
+
+Ingredient-based search bar
+Quick filters:
+
+Dietary preferences (vegan, gluten-free, etc.)
+Meal types (breakfast, lunch, dinner)
+Nutritional filters (low-carb, high-protein)
+
+
+
+C. Recipe Search Results Screen
+
+Display recipes from API search
+Show:
+
+Recipe image
+Title
+Quick nutritional overview
+Cooking time
+Dietary tags
+
+
+
+D. Recipe Detail Screen
+
+Comprehensive recipe information
+Ingredients list
+Step-by-step instructions
+Full nutritional breakdown
+Option to save recipe
+
+E. Profile/Settings Screen
+
+Manage dietary preferences
+Notification settings
+Saved recipes
+Dietary goal tracking
+
+F. Shopping List Screen
+
+Add/remove ingredients
+Mark items as purchased
+Share list functionality
+
+
+
+Recommended Development Order
+
+Set up project structure
+Implement API service
+Create model classes
+Develop Home Screen
+Implement Recipe Search functionality
+Build Recipe Detail Screen
+Add Profile/Settings Screen
+Implement Shopping List
+Add authentication
+Implement push notifications
+Refine UI/UX
+Add error handling and edge cases
+
+API Usage Tips
+
+Use complexSearch endpoint with multiple filters
+addRecipeNutrition=true to get detailed nutritional info
+Implement caching to reduce API calls
+Handle rate limits gracefully
+
+Potential Challenges
+
+API rate limits
+Handling diverse recipe data
+Creating a smooth, responsive UI
+Managing complex state
+
+Recommended Tools
+
+Flutter
+Dio for HTTP requests
+Provider/Riverpod for state management
+Firebase for authentication
+Hive/SQLite for local storage
